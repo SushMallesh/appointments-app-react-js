@@ -1,0 +1,131 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(#fbc7d4, #9796f0);
+  min-height: 100vh;
+}
+.appointments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.appointment-container {
+  display: flex;
+  justify-content: space-around;
+}
+.appointment-input-container {
+  padding-left: 20px;
+}
+.appointments-image {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .appointments-image {
+    display: flex;
+    max-width: 400px;
+    margin-top: 12px;
+  }
+}
+
+.heading {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 36px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 30px;
+}
+.input {
+  width: 200px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 2px solid #b5b7c4;
+}
+@media screen and (min-width: 768px) {
+  .input {
+    width: 380px;
+  }
+}
+.input-label {
+  color: #b5b7c4;
+  font-size: 14px;
+  font-family: 'Roboto';
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .input-label {
+    font-size: 20px;
+  }
+}
+.add-button {
+  background-color: #8b5cf6;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 6px 14px 6px 14px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .add-button {
+    font-size: 18px;
+    padding: 8px 16px 8px 16px;
+  }
+}
+.separator {
+  width: 90%;
+  width: 2px solid #b5b7c4;
+}
+.appointments {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 15px;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .appointments {
+    font-size: 25px;
+  }
+}
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .appointments-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.starred-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.starred-button {
+  border-radius: 8px;
+  border: 2px solid #b5b7c4;
+  color: #8b5cf6;
+}
+.selected-starred {
+  background-color: #8b5cf6;
+  color: #ffffff;
+}
+.no-appointments {
+  color: #8b5cf6;
+  text-align: center;
+}
